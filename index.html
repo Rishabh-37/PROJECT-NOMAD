@@ -3,9 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NomadWander - Discover Secret Travel Paths</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>this is my first project</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-route"></i>
+                <span>NomadWander</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="route-planner.html" class="nav-link">Plan Route</a></li>
+                <li><a href="hidden-destinations.html" class="nav-link">Hidden Gems</a></li>
+                <li><a href="local-insights.html" class="nav-link">Local Insights</a></li>
+                <li><a href="vehicle-prep.html" class="nav-link">Vehicle Prep</a></li>
+                <li><a href="ev-stations.html" class="nav-link">EV Stations</a></li>
+                <li><a href="community.html" class="nav-link">Community</a></li>
+                <li><a href="#" class="nav-link login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Hidden Travel Routes</h1>
+            <p>Uncover secret paths, get local insights, and plan the perfect journey with insider knowledge</p>
+            
+            <!-- Route Planner -->
+            <div class="route-planner">
+                <div class="planner-header">
+                    <h3><i class="fas fa-map-marked-alt"></i> Plan Your Journey</h3>
+                </div>
+                <form class="planner-form">
+                    <div class="input-group">
+                        <div class="input-field">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" placeholder="From (e.g., Delhi)" id="from-location">
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-flag-checkered"></i>
+                            <input type="text" placeholder="To (e.g., Nainital)" id="to-location">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <i class="fas fa-calendar"></i>
+                            <input type="number" placeholder="Days" min="1" max="30" id="trip-days">
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-car"></i>
+                            <select id="vehicle-type">
+                                <option value="">Vehicle Type</option>
+                                <option value="car">Personal Car</option>
+                                <option value="bike">Motorbike</option>
+                                <option value="ev">Electric Vehicle</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="plan-btn">
+                        <i class="fas fa-search"></i>
+                        Find Hidden Routes
+                    </button>
+                </form>
+            </div>
+
+            <!-- Quick Features -->
+            <div class="quick-features">
+                <div class="feature">
+                    <i class="fas fa-eye"></i>
+                    <span>Secret Routes</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <span>Local Reviews</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-tools"></i>
+                    <span>Vehicle Tips</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-charging-station"></i>
+                    <span>EV Charging</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Welcome to NomadWander</h2>
+                <p>Your ultimate companion for discovering secret travel paths and hidden gems across India. We combine local insights, comprehensive vehicle preparation guides, and community-driven recommendations to make your journey unforgettable.</p>
+                
+                <div class="features-overview">
+                    <div class="feature-item">
+                        <i class="fas fa-route"></i>
+                        <h3>Smart Route Planning</h3>
+                        <p>AI-powered optimization with hidden gems integration</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-gem"></i>
+                        <h3>Hidden Destinations</h3>
+                        <p>Discover secret spots known only to locals</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Community Insights</h3>
+                        <p>Real experiences from fellow travelers</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-tools"></i>
+                        <h3>Vehicle Preparation</h3>
+                        <p>Complete guides for cars, bikes, and EVs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-route"></i>
+                        <span>NomadWander</span>
+                    </div>
+                    <p>Discover hidden travel paths with local insights and comprehensive vehicle preparation guides.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#plan-route">Plan Route</a></li>
+                        <li><a href="#hidden-destinations">Hidden Destinations</a></li>
+                        <li><a href="#local-insights">Local Insights</a></li>
+                        <li><a href="#vehicle-prep">Vehicle Preparation</a></li>
+                        <li><a href="#ev-stations">EV Charging</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Emergency Helpline</a></li>
+                        <li><a href="#">Roadside Assistance</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NomadWander. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
